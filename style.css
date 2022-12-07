@@ -1,0 +1,353 @@
+
+
+
+html {
+    box-sizing: border-box;
+    background: palevioletred; 
+    /* background:#C0C0C0; */
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 800px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: 	#FF00FF;
+}
+
+.full {
+    position: relative;
+    margin-top: 0px;
+}
+.cent {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sait {
+    max-width: 1500px;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+}
+
+.menu {
+    margin-bottom: 5px;    
+}
+
+
+.oglav {
+    height: 80px;
+    margin-bottom: 20px;
+    /* background-image: url('rose6.jpg'); */
+    border-radius: 20px;
+    background: lightpink;
+
+}
+
+
+.main {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    align-items: flex-end;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.info {
+    margin-bottom: 20px;
+    height: 1000px;
+    position: relative;
+    background-image: url(rose9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+}
+
+.job {
+    border: 2px solid black;
+    margin-bottom: 20px;
+    height: 250px;
+    border-radius: 40px;
+    
+}
+
+.contacts {
+   
+    margin-bottom: 20px;
+}
+.contacts2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 50px;
+}
+
+.img1 {
+    width: 50%;
+    border-radius: 100px;
+    opacity: .8;
+    filter: blur(3px);
+}
+
+.img2 {
+    width: 50%;
+    border-radius: 100px;
+    opacity: 1.2;
+    margin-left: 50px;
+    filter: blur(3px);
+}
+
+.imgg {
+    display: flex;
+    position: relative;
+    border-radius: 100px;
+    margin-right: 120px;
+    margin-left: 120px;
+    margin-top: 50px;
+    
+    
+}
+.shifr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.roseimg1 {
+    max-height: 700px;
+    max-width: 700px; 
+    position: absolute;
+    left: 30px;
+    border-radius: 500px;
+}
+.roseimg2 {
+    max-height: 700px;
+    max-width: 700px; 
+    position: absolute;
+    right: 60px;
+    top: 50px;
+    border-radius: 500px;
+}
+.opis {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+
+.nap {
+    font-size: 50px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.btn1 {
+    width: 200px;
+    height: 100px;
+    background: lightpink;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s; 
+}
+.btn2 {
+    width: 200px;
+    height: 100px;
+    background: lightpink;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s; 
+}
+.btn1:hover,
+.btn2:hover {
+    background:rgb(230, 134, 187);
+}
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1330px) {
+    .roseimg1, .roseimg2 {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 720px) {
+    .main {
+        display: flex;
+        height: 80px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .oglav {
+        height: 160px;
+        padding-top: 30px;
+    }
+    .opis {
+        font-size: 40px;
+    }
+    .img1, .img2 {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 1485px) {
+    .job {
+        height: 200px;
+        padding-bottom: 100px;
+
+    }
+}
+@media (max-width: 720px) {
+    .shifr {
+        font-size: 30px;
+    }
+    .menu {
+        margin-bottom: 100px;
+        margin-top: 100px;
+        margin-right: auto;
+        margin-left: 20px;
+    }
+    .main {
+        margin-right: 30px;
+        margin-left: auto;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .job {
+        height: 200px;
+        padding-bottom: 160px;
+
+    }
+}
+@media (max-width: 530px) {
+    .job {
+        height: 200px;
+        
+    }
+    .btn1,.btn2 {
+        display: block;
+    }
+    .opis {
+        font-size: 20px;
+        padding-bottom: 50px;
+        width: 150px;
+    }
+    .info {
+        height: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .job {
+        height: 200px;
+        padding-bottom: 300px;
+
+    }
+}
+@media (max-width: 450px) {
+    .nap {
+        font-size: 20px;
+        width: 30px;
+    }
+    .btns {
+        display: block;
+    }
+    .btn1,.btn2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        
+    }
+}
+@media (max-width: 412px) {
+    .opis {
+        font-size: 20px;
+    }
+    .contacts2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 291px) {
+    .opis {
+        font-size: 15px;
+    }
+    .shifr {
+        font-size: 20px;
+        padding-right: 10px;
+    }
+   
+} 
+
+
+
+
+
+
+/*
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 998px) {
+    
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 576px) and (max-height: 300px) {
+        
+}
+*/
